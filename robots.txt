@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.kuijpers-ts.nl/sitemap.xml

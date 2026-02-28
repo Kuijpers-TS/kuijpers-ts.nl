@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<title>Smeerapparaat Ø60mm | KTS BV</title>
+<link rel="alternate" hreflang="es" href="https://www.kuijpers-ts.nl/es/smeerapparaat.html">
+<link rel="alternate" hreflang="nl" href="https://www.kuijpers-ts.nl/smeerapparaat.html">
+<link rel="alternate" hreflang="en" href="https://www.kuijpers-ts.nl/en/smeerapparaat.html">
+<link rel="canonical" href="https://www.kuijpers-ts.nl/smeerapparaat.html">
+<link rel="stylesheet" href="style.css">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Engineering en bouw van een passief smeerapparaat voor Ø60mm staalkabels. RVS 316 frame met snelsluitende klemconstructie en vetpompsysteem.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / LinkedIn / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.kuijpers-ts.nl/smeerapparaat.html">
+<meta property="og:title" content="Smeerapparaat Ø60mm Staalkabel — RVS Engineering | KTS BV">
+<meta property="og:description" content="Engineering en bouw van een passief smeerapparaat voor Ø60mm staalkabels. RVS 316 frame met snelsluitende klemconstructie en vetpompsysteem.">
+<meta property="og:image" content="https://www.kuijpers-ts.nl/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Kuijpers Technical Services">
+
+</head>
+<body>
+<nav role="navigation" aria-label="Hoofdnavigatie"><div class="nav-inner"><a href="designs.html" class="back-link">&#8592; Terug naar home</a>
+    <div class="nav-lang" style="margin-left:auto;font-size:0.75rem;display:flex;gap:6px;align-items:center"><a href="en/smeerapparaat.html" style="font-size:0.85rem;color:rgba(255,255,255,0.7);text-decoration:none" title="English">EN</a> <span style="color:rgba(255,255,255,0.3)">|</span> <a href="es/smeerapparaat.html" style="font-size:0.85rem;color:rgba(255,255,255,0.7);text-decoration:none" title="Español">ES</a></div></div></nav>
+
+<section class="project-hero">
+  <div class="sector">Machinebouw</div>
+  <h1>Smeerapparaat Ø60mm staalkabel</h1>
+  <p>Engineering en bouw van een passief smeerapparaat voor Ø60mm staalkabels. RVS 316 frame met snelsluitende klemconstructie, compleet met vetpompsysteem en toebehoren.</p>
+  <div class="project-tags">
+    <span class="project-tag">Engineering</span>
+    <span class="project-tag">RVS 316</span>
+    <span class="project-tag">Maatwerk</span>
+  </div>
+</section>
+
+<div class="project-content">
+  <h2>Projectomschrijving</h2>
+  <p>Ontwerp en bouw van een passief smeerapparaat geschikt voor mobiele montage op een Ø60mm staalkabel. Het complete project omvatte engineering, fabricage en levering inclusief toebehoren.</p>
+  
+  <ul class="highlight-list">
+    <li>Mechanisch ontwerp passend op Ø60mm kabel met ±1mm tolerantie</li>
+    <li>Behuizing in RVS 316 gelast frame, ca. 15 kg</li>
+    <li>Snelsluitende klemconstructie met twee knevels</li>
+    <li>NBR O-ring & TPU 95A afdichtingsblokken</li>
+    <li>Vetpomp met luchtpompdoseersysteem en regelbaar debiet</li>
+    <li>Compressor 230 VAC, vetsmeerslangen en persluchtslang</li>
+    <li>Complete oplevermap met technische documentatie</li>
+  </ul>
+
+  <div class="gallery">
+    <h2>3D CAD renders</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(0)"><img src="images/smeerapparaat-1.jpg" alt="Smeerapparaat assembled - 3D CAD render"></div>
+      <div class="gallery-item" onclick="openLightbox(1)"><img src="images/smeerapparaat-2.jpg" alt="Smeerapparaat doorsnede - 3D CAD render"></div>
+    </div>
+  </div>
+</div>
+
+<footer><p>&copy; 2026 Kuijpers Technical Services B.V. | <a href="index.html">Terug naar home</a></p><div style="text-align:center;font-size:0.7rem;opacity:0.5;padding:0.5rem">KvK: 93410557 | <a href="privacyverklaring.html" style="color:inherit">Privacyverklaring</a></div></footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Afbeelding vergroting">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)">&#8249;</button>
+  <img id="lightbox-img" src="" alt="Navigatie icoon Kuijpers Technical Services">
+  <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)">&#8250;</button>
+</div>
+
+<script>
+const images=document.querySelectorAll(".gallery-item img");let ci=0;
+function openLightbox(i){ci=i;document.getElementById("lightbox-img").src=images[i].src;document.getElementById("lightbox").classList.add("active");document.body.style.overflow="hidden"}
+function closeLightbox(){document.getElementById("lightbox").classList.remove("active");document.body.style.overflow=""}
+function navLightbox(d){ci=(ci+d+images.length)%images.length;document.getElementById("lightbox-img").src=images[ci].src}
+document.getElementById("lightbox").addEventListener("click",function(e){if(e.target===this)closeLightbox()});
+document.addEventListener("keydown",function(e){if(!document.getElementById("lightbox").classList.contains("active"))return;if(e.key==="Escape")closeLightbox();if(e.key==="ArrowLeft")navLightbox(-1);if(e.key==="ArrowRight")navLightbox(1)});
+</script>
+</body>
+</html>

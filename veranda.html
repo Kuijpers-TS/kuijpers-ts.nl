@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<title>Veranda 6×5m | KTS BV</title>
+<link rel="alternate" hreflang="es" href="https://www.kuijpers-ts.nl/es/veranda.html">
+<link rel="alternate" hreflang="nl" href="https://www.kuijpers-ts.nl/veranda.html">
+<link rel="alternate" hreflang="en" href="https://www.kuijpers-ts.nl/en/veranda.html">
+<link rel="canonical" href="https://www.kuijpers-ts.nl/veranda.html">
+<link rel="stylesheet" href="style.css">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Ontwerp en realisatie van een vrijstaande veranda van 6×5 meter. Houten kolommen en balken met stalen hoofdligger als aanbouw aan bijgebouw.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / LinkedIn / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.kuijpers-ts.nl/veranda.html">
+<meta property="og:title" content="Veranda 6×5m — Hout & Staal Constructie | KTS BV">
+<meta property="og:description" content="Ontwerp en realisatie van een vrijstaande veranda van 6×5 meter. Houten kolommen en balken met stalen hoofdligger als aanbouw aan bijgebouw.">
+<meta property="og:image" content="https://www.kuijpers-ts.nl/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Kuijpers Technical Services">
+
+</head>
+<body>
+<nav role="navigation" aria-label="Hoofdnavigatie"><div class="nav-inner"><a href="designs.html" class="back-link">&#8592; Terug naar home</a>
+    <div class="nav-lang" style="margin-left:auto;font-size:0.75rem;display:flex;gap:6px;align-items:center"><a href="en/veranda.html" style="font-size:0.85rem;color:rgba(255,255,255,0.7);text-decoration:none" title="English">EN</a> <span style="color:rgba(255,255,255,0.3)">|</span> <a href="es/veranda.html" style="font-size:0.85rem;color:rgba(255,255,255,0.7);text-decoration:none" title="Español">ES</a></div></div></nav>
+
+<section class="project-hero">
+  <div class="sector">Woningbouw & Interieur</div>
+  <h1>Veranda 6×5 meter</h1>
+  <p>Ontwerp en realisatie van een vrijstaande veranda van 6 bij 5 meter. Houten kolommen en balken met stalen hoofdligger, gebouwd als aanbouw aan een bestaand bijgebouw.</p>
+  <div class="project-tags">
+    <span class="project-tag">Houtconstructie</span>
+    <span class="project-tag">Staal</span>
+    <span class="project-tag">Realisatie</span>
+  </div>
+</section>
+
+<div class="project-content">
+  <h2>Projectomschrijving</h2>
+  <p>Een ruime veranda van 6×5 meter, gerealiseerd als aanbouw aan een bestaand bijgebouw op het platteland. De constructie bestaat uit zware houten kolommen en dakbalken, gedragen door een stalen hoofdligger (IPE-profiel) voor de benodigde overspanning. Het open dak met houten gordingen geeft een karakteristieke uitstraling.</p>
+
+  <ul class="highlight-list">
+    <li>Veranda van 6×5 meter aangebouwd aan bijgebouw</li>
+    <li>Zware houten kolommen en dakbalken</li>
+    <li>Stalen hoofdligger (IPE-profiel) voor grote overspanning</li>
+    <li>Open dakconstructie met houten gordingen</li>
+    <li>Ontwerp, constructieberekeningen en realisatie</li>
+  </ul>
+
+  <div class="gallery">
+    <h2>Bouwfoto's</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(0)"><img src="images/veranda-1.jpg" alt="Veranda constructie - vooraanzicht met stalen ligger"></div>
+      <div class="gallery-item" onclick="openLightbox(1)"><img src="images/veranda-2.jpg" alt="Veranda buitenaanzicht met bijgebouw"></div>
+      <div class="gallery-item" onclick="openLightbox(2)"><img src="images/veranda-3.jpg" alt="Veranda dakconstructie - detail gordingen"></div>
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Afbeelding vergroting">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)">&#8249;</button>
+  <img id="lightbox-img" src="" alt="Navigatie icoon Kuijpers Technical Services">
+  <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)">&#8250;</button>
+</div>
+
+<footer><p>&copy; 2026 Kuijpers Technical Services B.V. | <a href="index.html">Terug naar home</a></p><div style="text-align:center;font-size:0.7rem;opacity:0.5;padding:0.5rem">KvK: 93410557 | <a href="privacyverklaring.html" style="color:inherit">Privacyverklaring</a></div></footer>
+
+<script>
+const images=document.querySelectorAll(".gallery-item img");let ci=0;
+function openLightbox(i){ci=i;document.getElementById("lightbox-img").src=images[i].src;document.getElementById("lightbox").classList.add("active");document.body.style.overflow="hidden"}
+function closeLightbox(){document.getElementById("lightbox").classList.remove("active");document.body.style.overflow=""}
+function navLightbox(d){ci=(ci+d+images.length)%images.length;document.getElementById("lightbox-img").src=images[ci].src}
+document.getElementById("lightbox").addEventListener("click",function(e){if(e.target===this)closeLightbox()});
+document.addEventListener("keydown",function(e){if(!document.getElementById("lightbox").classList.contains("active"))return;if(e.key==="Escape")closeLightbox();if(e.key==="ArrowLeft")navLightbox(-1);if(e.key==="ArrowRight")navLightbox(1)});
+</script>
+</body>
+</html>
